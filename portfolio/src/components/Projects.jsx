@@ -158,7 +158,7 @@ function Projects() {
           </div>
 
           <div className='flex flex-col flex-grow'>
-            <div className='flex gap-10 flex-wrap justify-between overflow-y-auto max-h-[35rem]'>
+            <div className='flex gap-10 flex-wrap justify-between overflow-y-auto max-h-[35rem] text-text'>
 
               {projects.length > 0 ? projects.map((p, index) => (
                 <Project
