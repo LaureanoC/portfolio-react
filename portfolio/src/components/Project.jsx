@@ -25,7 +25,7 @@ function Project(props) {
         <p className='mb-4 text-text'>{props.desc}</p>
         <button
           type='button'
-          className='max-w-24 self-end mt-auto text-white bg-subtitle py-1 px-2 rounded hover:bg-subtitlehover'
+          className='max-w-24 self-end font-medium mt-auto text-white bg-subtitle py-1 px-2 rounded hover:bg-subtitlehover'
           onClick={() => {handleButton(props.id)}}
         >
           Ver más

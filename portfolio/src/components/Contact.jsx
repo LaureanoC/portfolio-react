@@ -48,7 +48,7 @@ function Contact() {
                 placeholder='Mensaje'
               ></textarea>
 
-              <button className='max-w-24 self-center mt-auto text-white bg-text py-2 px-4 rounded'>
+              <button className='self-end mt-auto font-medium text-white bg-text py-2 px-10 rounded'>
                 Enviar
               </button>
             </form>
