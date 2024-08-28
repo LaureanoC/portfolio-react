@@ -6,7 +6,8 @@ export default {
       colors:{
         'bg': '#E9F1FA',
         'text':'#1F375B',
-        'subtitle':'#00ABE4'
+        'subtitle':'#00ABE4',
+        'subtitlehover':'#00A5DD'
       }
     },
   },

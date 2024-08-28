@@ -2,6 +2,10 @@ import PropTypes from 'prop-types'
 
 function Project(props) {
 
+  const handleButton = () => {
+
+  }
+
   return (
     <>
       <div className='flex flex-col max-w-xl'>
@@ -10,7 +14,7 @@ function Project(props) {
           <span className='mr-auto text-gray-400 text-xs'>{props.date}</span>
           {props.tech.map((tech, index) => (
             <div
-              className='font-medium bg-gray-100 py-1 px-2 text-xs text-gray-500 rounded-full'
+              className='font-medium bg-gray-100 py-1 px-2 text-xs text-gray-500 rounded-full select-none'
               key={index}
             >
               {tech}
@@ -18,10 +22,11 @@ function Project(props) {
           ))}
         </div>
         <h3 className='text-text font-bold text-xl mb-4 mt-2'>{props.title}</h3>
-        <p className='mb-4'>{props.desc}</p>
+        <p className='mb-4 text-text'>{props.desc}</p>
         <button
           type='button'
-          className='max-w-24 self-end mt-auto text-white bg-text py-1 px-2 rounded'
+          className='max-w-24 self-end mt-auto text-white bg-subtitle py-1 px-2 rounded hover:bg-subtitlehover'
+          onClick={() => {handleButton(props.id)}}
         >
           Ver más
         </button>
@@ -36,6 +41,7 @@ Project.propTypes = {
   img: PropTypes.string,
   title: PropTypes.string,
   desc: PropTypes.string,
+  id:PropTypes.string
 }
 
 export default Project

@@ -1,7 +1,8 @@
 function About() {
   return (
     <>
-      <div className='bg-bg pt-20 pb-20' id='about'>
+    
+      <div className='bg-bg py-20' id="about">
         <div className='container mx-auto'>
           <div className='flex justify-between'>
             <div className='flex-col  max-w-4xl'>

@@ -5,3 +5,13 @@
 html{
   scroll-behavior: smooth;
 }
+
+textarea{
+  field-sizing: content;
+  min-height: 5lh;
+  max-height: 10lh;
+  resize:none;
+  border-bottom: solid 0.5px lightgray ;
+  outline: none;
+}
+

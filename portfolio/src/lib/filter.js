@@ -5,7 +5,8 @@ export const filter = (
   svelte,
   vanilla,
   java,
-  net
+  net,
+  react
 ) => {
   let filterTechs = []
 
@@ -33,6 +34,11 @@ export const filter = (
   if (net) {
     filterTechs.push('.NET')
   }
+
+  if(react){
+    filterTechs.push('React')
+  }
+
 
   const filter = allprojects.filter((p) =>
     filterTechs.every((tech) => p.tech.includes(tech))
