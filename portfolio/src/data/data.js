@@ -39,7 +39,7 @@ export const allprojects = [
     id: '5',
     title: 'Academia',
     desc: 'Sistema que permite registrar profesores, alumnos, anotarse a materias. Utilicé Entity  Framework, winForms y Blazor.',
-    date: 'May, 2022',
+    date: 'Nov 10, 2023',
     img: './img/sky.png',
     tech: ['.NET', 'sqlServer'],
     repo: 'https://github.com/LaureanoC/TPI-NET',
