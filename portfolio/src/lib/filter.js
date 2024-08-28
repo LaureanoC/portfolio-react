@@ -35,14 +35,17 @@ export const filter = (
     filterTechs.push('.NET')
   }
 
-  if(react){
+  if (react) {
     filterTechs.push('React')
   }
-
 
   const filter = allprojects.filter((p) =>
     filterTechs.every((tech) => p.tech.includes(tech))
   )
 
   return filter
+}
+
+export const getProject = (projects, id) => {
+  return projects.find((p) => p.id === id)
 }

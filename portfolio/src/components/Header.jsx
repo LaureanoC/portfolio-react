@@ -6,13 +6,13 @@ function Header() {
           <nav>
             <ul className='flex'>
               <li className='mr-10'>
-                <a href='#about'>Sobre mí</a>
+                <a href='/#about'>Sobre mí</a>
               </li>
               <li className='mr-10'>
-                <a href='#projects'>Proyectos</a>
+                <a href='/#projects'>Proyectos</a>
               </li>
               <li className='mr-10'>
-                <a href='#contact'>Contacto</a>
+                <a href='/#contact'>Contacto</a>
               </li>
             </ul>
           </nav>

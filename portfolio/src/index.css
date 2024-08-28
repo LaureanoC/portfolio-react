@@ -7,7 +7,6 @@ html{
 }
 
 textarea{
-  field-sizing: content;
   min-height: 5lh;
   max-height: 10lh;
   resize:none;
