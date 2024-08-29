@@ -2,6 +2,10 @@ import Footer from '../components/Footer'
 import { useParams } from 'react-router-dom'
 import { getProject } from '../lib/filter'
 import { allprojects } from '../data/data'
+import Carousel from '../components/Carousel'
+
+
+
 
 function ProjectPage() {
   const params = useParams()
@@ -20,8 +24,14 @@ function ProjectPage() {
           </span>
         </div>
         <hr className='mt-10 mb-5' />
-        <p className='text-text'>{p.desc}</p>
-        <a href={p.repo} className='text-text font-medium underline'>Visita el repositorio del proyecto</a>
+        <p className='text-text'>{p.fulldesc}</p>
+        <a target='_blank' href={p.repo} className='text-text font-medium underline'>
+          Visita el repositorio del proyecto
+        </a>
+        <h2 className='text-4xl text-subtitle font-bold mt-10 mb-5'>
+          Imágenes
+        </h2>
+        <Carousel imgs={p.imgs}/>
         <h2 className='text-4xl text-subtitle font-bold mt-10'>Video</h2>
       </div>
 

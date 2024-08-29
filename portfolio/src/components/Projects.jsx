@@ -168,6 +168,7 @@ function Projects() {
                   tech={p.tech}
                   desc={p.desc}
                   img={p.img}
+                  imgs={p.imgs}
                   id={p.id}
                 />
               )) : 'No se encontraron resultados.' }
