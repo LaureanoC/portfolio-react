@@ -23,7 +23,8 @@ function ProjectPage() {
             Volver
           </span>
         </div>
-        <hr className='mt-10 mb-5' />
+        <hr className='mt-5 mb-5' />
+        <div className='my-5 text-gray-400 text-xs'>{p.date}</div>
         <p className='text-text'>{p.fulldesc}</p>
         <a target='_blank' href={p.repo} className='text-text font-medium underline'>
           Visita el repositorio del proyecto

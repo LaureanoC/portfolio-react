@@ -29,9 +29,10 @@ export const allprojects = [
       '../img/tryhard-2.png',
       '../img/tryhard-3.png',
       '../img/tryhard-4.png',
-      '../img/tryhard-5.png'
+      '../img/tryhard-5.png',
+      '../img/tryhard-6.png'
     ],
-    fulldesc:'Este proyecto está hecho en vanilla javascript, es decir, sin ningún framework que te facilite por ejemplo la creación de componentes. Aquí he aprendido a manipular de una forma mas cercana el DOM, a crear elementos, a anidarlos, a conectarlos y desconectarlos. Este proyecto fue un desafío propuesto por Oracle y Alura Latam, ellos nos proporcionaron el diseño en figma. Extraje imagenes de internet, las modifiqué en photoshop y le dí el toque friki a la página vendiendo videojuegos, peluches de pókemon y camisetas de e-sports. '
+    fulldesc:'Este proyecto está hecho en vanilla javascript, es decir, sin ningún framework que te facilite por ejemplo la creación de componentes. Aquí he aprendido a manipular de una forma mas cercana el DOM, a crear elementos, a anidarlos, a conectarlos y desconectarlos. Cada item junto con el usuario estaba alojado en una FAKE API REST en heroku (ya no más ya que dejó de ser gratuita). Ademas he utilizado la API de Cloudinary para alojar las imagenes allí y obtener las urls. Este proyecto fue un desafío propuesto por Oracle y Alura Latam, ellos nos proporcionaron el diseño en figma. Extraje imagenes de internet, las modifiqué en photoshop y le dí el toque friki a la página vendiendo videojuegos, peluches de pókemon y camisetas de e-sports.'
   },
   {
     id: '3',
