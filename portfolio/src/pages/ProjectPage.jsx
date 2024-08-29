@@ -32,7 +32,6 @@ function ProjectPage() {
           Imágenes
         </h2>
         <Carousel imgs={p.imgs}/>
-        <h2 className='text-4xl text-subtitle font-bold mt-10'>Video</h2>
       </div>
 
       <Footer />
