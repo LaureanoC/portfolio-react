@@ -64,19 +64,5 @@ export const allprojects = [
     fulldesc: 'Sitio web para consultar el valor del dólar blue. Este proyecto es muy pequeño pero me sirvió para poner en practica lo aprendido con Svelte. Se puede consultar valores hasta el año 2011. He utilizado una api gratuita de algunos valores monetarios y solo extraje el dólar blue.',
   },
   
-  {
-    id: '5',
-    title: 'Academia',
-    desc: 'Sistema que permite registrar profesores, alumnos, anotarse a materias. Utilicé Entity  Framework, winForms y Blazor.',
-    date: 'Nov 10, 2023',
-    img: './img/sky.png',
-    tech: ['.NET', 'sqlServer'],
-    repo: 'https://github.com/LaureanoC/TPI-NET',
-    imgs: [
-      '../img/circulo-1.png',
-      '../img/circulo-2.png',
-      '../img/circulo-3.png',
-      '../img/circulo-4.png',
-    ],
-  },
+  
 ]

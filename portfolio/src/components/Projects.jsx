@@ -19,7 +19,6 @@ function Projects() {
   const [svelte, setSvelte] = useState(false)
   const [java, setJava] = useState(false)
   const [vanilla, setVanilla] = useState(false)
-  const [net, setNet] = useState(false)
   const [react, setReact] = useState(false)
 
   useEffect(() => {
@@ -31,24 +30,20 @@ function Projects() {
         svelte,
         vanilla,
         java,
-        net,
         react
       )
-    
+
       setProjects(filteredProjects)
-      
     }
 
     handleFilter()
-  }, [django, fastapi, svelte, vanilla, java, net, react])
+  }, [django, fastapi, svelte, vanilla, java, react])
 
   return (
     <>
-    <div id='projects' className='pt-10'></div>
+      <div id='projects' className='pt-10'></div>
       <div className='container mx-auto mt-10'>
-        <h2 className='text-5xl text-text font-bold' >
-          Proyectos
-        </h2>
+        <h2 className='text-5xl text-text font-bold'>Proyectos</h2>
         <hr className='mt-10 mb-5' />
 
         <div className='flex gap-10'>
@@ -94,20 +89,6 @@ function Projects() {
                 </div>
               ) : (
                 'Java'
-              )}
-            </div>
-
-            <div
-              className={net ? filterActive : filterNotActive}
-              onClick={() => setNet(!net)}
-            >
-              {net ? (
-                <div className='flex justify-between'>
-                  .NET
-                  <VscChromeClose className='mr-4 self-center text-subtitle text-opacity-50' />
-                </div>
-              ) : (
-                '.NET'
               )}
             </div>
 
@@ -159,19 +140,20 @@ function Projects() {
 
           <div className='flex flex-col flex-grow'>
             <div className='flex gap-10 flex-wrap justify-between overflow-y-auto max-h-[35rem] text-text'>
-
-              {projects.length > 0 ? projects.map((p, index) => (
-                <Project
-                  key={index}
-                  title={p.title}
-                  date={p.date}
-                  tech={p.tech}
-                  desc={p.desc}
-                  img={p.img}
-                  imgs={p.imgs}
-                  id={p.id}
-                />
-              )) : 'No se encontraron resultados.' }
+              {projects.length > 0
+                ? projects.map((p, index) => (
+                    <Project
+                      key={index}
+                      title={p.title}
+                      date={p.date}
+                      tech={p.tech}
+                      desc={p.desc}
+                      img={p.img}
+                      imgs={p.imgs}
+                      id={p.id}
+                    />
+                  ))
+                : 'No se encontraron resultados.'}
             </div>
           </div>
         </div>
