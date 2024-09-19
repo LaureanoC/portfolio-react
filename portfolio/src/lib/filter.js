@@ -5,7 +5,6 @@ export const filter = (
   svelte,
   vanilla,
   java,
-  net,
   react
 ) => {
   let filterTechs = []
@@ -31,9 +30,6 @@ export const filter = (
     filterTechs.push('Java Servlet')
   }
 
-  if (net) {
-    filterTechs.push('.NET')
-  }
 
   if (react) {
     filterTechs.push('React')

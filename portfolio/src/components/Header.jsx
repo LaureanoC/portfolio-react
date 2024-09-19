@@ -1,18 +1,33 @@
 function Header() {
   return (
     <>
-      <div className='bg-white sticky top-0'>
-        <div className='container mx-auto p-6 pl-0 text-text font-medium'>
+      <div className='bg-white sticky top-0 z-50 shadow-sm'>
+        <div className='container mx-auto p-4 sm:py-6  text-text font-medium'>
           <nav>
-            <ul className='flex'>
-              <li className='mr-10'>
-                <a href='/#about'>Sobre mí</a>
+            <ul className='flex justify-start gap-5 sm:gap-10'>
+              <li>
+                <a
+                  href='/#about'
+                  className='hover:text-gray-700 transition-all'
+                >
+                  Sobre mí
+                </a>
               </li>
-              <li className='mr-10'>
-                <a href='/#projects'>Proyectos</a>
+              <li>
+                <a
+                  href='/#projects'
+                  className='hover:text-gray-700 transition-all'
+                >
+                  Proyectos
+                </a>
               </li>
-              <li className='mr-10'>
-                <a href='/#contact'>Contacto</a>
+              <li>
+                <a
+                  href='/#contact'
+                  className='hover:text-gray-700 transition-all'
+                >
+                  Contacto
+                </a>
               </li>
             </ul>
           </nav>

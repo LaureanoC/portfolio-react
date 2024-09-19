@@ -1,11 +1,31 @@
 export const allprojects = [
+
+  {
+    id: '5',
+    title: 'Quiz League of Legends (en desarrollo)',
+    desc: 'Aplicación web de preguntas temáticas de League of Legends. Incluye preguntas sobre frases, iconos de habilidades, campeones, items y más. Incluye JWT, reseteo de contraseña vía email e idioma inglés o español.',
+    date: 'Ago 30, 2024',
+    img: './img/lolquiz-1.png',
+    tech: ['React', 'Django', 'Tailwind'],
+    repo: 'https://github.com/LaureanoC/lol_quiz',
+    imgs: [
+      '../img/lolquiz-1.png',
+      '../img/lolquiz-2.png',
+      '../img/lolquiz-3.png',
+      
+    ],
+    fulldesc:
+      'Quiz League of Legends es una aplicación web que desafía a los jugadores con preguntas sobre distintos aspectos del juego. El modo de juego es "Sudden Death", donde un error termina la partida. Los jugadores deben acumular la mayor racha de respuestas correctas posible para subir en el ranking. A medida que avanzas, las preguntas se vuelven más difíciles, aumentando el desafío. La aplicación incluye preguntas sobre campeones, habilidades, ítems y frases, y está disponible en inglés y español para que puedas elegir tu idioma preferido. Las tecnologías utilizadas incluyen React para el frontend, Django REST Framework para el backend, JWT para autenticación, SQLite3 para la base de datos y Tailwind CSS para el estilizado.',
+
+  },
+
   {
     id: '1',
     title: 'Club de ajedrez',
     desc: 'Aplicación web que permite registrar y ver las partidas de los torneos creados. Consume la API de lichess para crear la partida. He incluido JWT para manejar la autenticación de manera segura.',
     date: 'Abr 16, 2024',
     img: './img/circulo-3.png',
-    tech: ['Fast API', 'Svelte', 'mySQL'],
+    tech: ['Fast API', 'Svelte', 'Tailwind'],
     repo: 'https://github.com/LaureanoC/Circulo-de-Ajedrez',
     imgs: [
       '../img/circulo-0.png',

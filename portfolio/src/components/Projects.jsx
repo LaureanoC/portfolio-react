@@ -7,13 +7,11 @@ import { filter } from '../lib/filter'
 function Projects() {
   const [projects, setProjects] = useState(allprojects)
 
-  // Filters
   const filterActive =
-    'w-72 text-left font-medium bg-subtitle bg-opacity-40 py-2 pl-2 text-text cursor-pointer'
+    'w-full sm:w-72 text-left font-medium bg-subtitle bg-opacity-40 py-2 pl-2 text-text cursor-pointer'
   const filterNotActive =
-    'w-72 text-left font-medium py-2 pl-2 text-text cursor-pointer hover:bg-gray-50 '
+    'w-full sm:w-72 text-left font-medium py-2 pl-2 text-text cursor-pointer hover:bg-gray-50 '
 
-  // States
   const [django, setDjango] = useState(false)
   const [fastapi, setFastapi] = useState(false)
   const [svelte, setSvelte] = useState(false)
@@ -42,12 +40,12 @@ function Projects() {
   return (
     <>
       <div id='projects' className='pt-10'></div>
-      <div className='container mx-auto mt-10'>
-        <h2 className='text-5xl text-text font-bold'>Proyectos</h2>
-        <hr className='mt-10 mb-5' />
+      <div className='container mx-auto mt-10 px-4 md:px-0'>
+        <h2 className='text-3xl md:text-5xl text-text font-bold'>Proyectos</h2>
+        <hr className='mt-6 mb-3 md:mt-10 md:mb-5' />
 
-        <div className='flex gap-10'>
-          <div className='flex flex-col gap-3 select-none mb-40'>
+        <div className='flex flex-col md:flex-row gap-10'>
+          <div className='flex flex-col gap-3 select-none mb-20 md:mb-40'>
             <h4 className='font-bold text-text'>Backend</h4>
 
             <div
@@ -139,7 +137,7 @@ function Projects() {
           </div>
 
           <div className='flex flex-col flex-grow'>
-            <div className='flex gap-10 flex-wrap justify-between overflow-y-auto max-h-[35rem] text-text'>
+            <div className='flex gap-4 md:gap-10 flex-wrap overflow-y-auto max-h-[35rem] text-text'>
               {projects.length > 0
                 ? projects.map((p, index) => (
                     <Project
