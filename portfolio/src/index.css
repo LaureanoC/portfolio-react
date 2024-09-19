@@ -14,3 +14,10 @@ textarea{
   outline: none;
 }
 
+.none{
+  display: none;
+}
+
+.mounted{
+  display: block !important;
+}

@@ -4,18 +4,24 @@ import { getProject } from '../lib/filter'
 import { allprojects } from '../data/data'
 import Carousel from '../components/Carousel'
 import { useNavigate } from 'react-router-dom'
+import { useEffect, useState } from 'react'
 
 function ProjectPage() {
   const { id } = useParams()
   const navigate = useNavigate()
   const p = getProject(allprojects, id)
+
   return (
     <>
-      <div className='container mx-auto mt-10 lg:mt-32 px-4 sm:px-6'>
+      <div className='flex flex-col container mx-auto mt-10 lg:mt-32 px-4 sm:px-6'>
         <div className='flex flex-col md:flex-row justify-between'>
-          <h1 className='text-text text-5xl font-bold mb-4 md:mb-0'>{p.title}</h1>
+          <h1 className='text-text text-5xl font-bold mb-4 md:mb-0'>
+            {p.title}
+          </h1>
           <span
-            className='mt-10 md:mt-auto self-center bg-subtitle rounded hover:bg-subtitlehover py-2 px-10 cursor-pointer text-white font-medium'
+            className={window.innerWidth < 800 ?   'hidden self-center bg-subtitle rounded hover:bg-subtitlehover py-2 px-10 cursor-pointer text-white font-medium'
+            :   'self-center bg-subtitle rounded hover:bg-subtitlehover py-2 px-10 cursor-pointer text-white font-medium'
+          }
             onClick={() => {
               navigate('/')
               window.scrollTo(0, 0)
@@ -40,7 +46,19 @@ function ProjectPage() {
         <h2 className='text-4xl text-subtitle font-bold mt-10 mb-5'>
           Imágenes
         </h2>
-        <Carousel imgs={p.imgs} />
+        <div>
+          <Carousel imgs={p.imgs} />
+        </div>
+        <br />
+        <span
+            className='self-center bg-subtitle rounded hover:bg-subtitlehover py-2 px-10 cursor-pointer text-white font-medium'
+            onClick={() => {
+              navigate('/')
+              window.scrollTo(0, 0)
+            }}
+          >
+            Volver
+          </span>
       </div>
 
       <Footer />
