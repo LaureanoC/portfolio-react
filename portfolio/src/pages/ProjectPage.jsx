@@ -4,7 +4,6 @@ import { getProject } from '../lib/filter'
 import { allprojects } from '../data/data'
 import Carousel from '../components/Carousel'
 import { useNavigate } from 'react-router-dom'
-import { useEffect, useState } from 'react'
 
 function ProjectPage() {
   const { id } = useParams()
